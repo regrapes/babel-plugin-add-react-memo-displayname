@@ -21,10 +21,22 @@
     "url": "https://github.com/regrapes/babel-plugin-add-react-memo-displayname/issues"
   },
   "homepage": "https://github.com/regrapes/babel-plugin-add-react-memo-displayname#readme",
+  "devDependencies": {
+    "@grapes-agency/eslint-config": "^1.6.2",
+    "semantic-release": "^18.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@grapes-agency/eslint-config/rules/base",
+      "@grapes-agency/eslint-config/rules/prettier"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "no-restricted-syntax": "off"
+    }
+  },
+  "prettier": "@grapes-agency/eslint-config/prettier",
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {
-    "semantic-release": "^18.0.0"
   }
 }
